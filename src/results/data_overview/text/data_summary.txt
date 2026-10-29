@@ -1,0 +1,9 @@
+Rows: 5172
+Columns: 3002
+
+Data types:
+int64    3001
+str         1
+
+Missing values:
+0

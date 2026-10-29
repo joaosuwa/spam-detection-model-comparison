@@ -1,0 +1,9 @@
+Train rows: 4137; test rows: 1035
+ fold  train_rows  validation_rows train_matrix_shape validation_matrix_shape
+    1        3309              828       (3309, 3000)             (828, 3000)
+    2        3309              828       (3309, 3000)             (828, 3000)
+    3        3310              827       (3310, 3000)             (827, 3000)
+    4        3310              827       (3310, 3000)             (827, 3000)
+    5        3310              827       (3310, 3000)             (827, 3000)
+
+Final TF-IDF matrices: train=(4137, 3000), test=(1035, 3000)

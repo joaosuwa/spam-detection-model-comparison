@@ -1,0 +1,8 @@
+Provisional model ranking (mean and standard deviation across five folds):
+                     accuracy_mean  accuracy_std  f1_score_mean  f1_score_std  precision_mean  precision_std  recall_mean  recall_std
+model                                                                                                                                
+Linear SVM                  0.9867        0.0039         0.9772        0.0067          0.9736         0.0079       0.9808      0.0081
+Neural Network              0.9845        0.0047         0.9735        0.0081          0.9664         0.0098       0.9808      0.0113
+Logistic Regression         0.9792        0.0046         0.9641        0.0079          0.9659         0.0136       0.9625      0.0114
+XGBoost                     0.9662        0.0071         0.9425        0.0119          0.9289         0.0138       0.9567      0.0137
+Decision Tree               0.9081        0.0056         0.8402        0.0102          0.8480         0.0074       0.8325      0.0130
