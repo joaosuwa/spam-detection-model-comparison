@@ -1,0 +1,24 @@
+{
+  "model": "Neural Network",
+  "accuracy": 0.9874396135265701,
+  "f1_score": 0.978441127694859,
+  "precision": 0.9735973597359736,
+  "recall": 0.9833333333333333,
+  "duration_seconds": 67.67968989998917,
+  "warnings": [],
+  "parameters": {
+    "hidden_layer_sizes": [
+      50
+    ],
+    "activation": "tanh",
+    "alpha": 0.06424982155390438,
+    "learning_rate_init": 0.0004672941588975318,
+    "batch_size": "auto"
+  },
+  "test_minus_standard_cv": {
+    "accuracy": 0.0009764061943232649,
+    "f1_score": 0.0017218295620560209,
+    "precision": -0.0015934798509240622,
+    "recall": 0.0050000000000000044
+  }
+}
