@@ -220,3 +220,4 @@ __marimo__/
 # data
 src/data/*
 src/results/data_overview/text/dataset_preview.txt
+AGENTS.md
