@@ -1,0 +1,26 @@
+{
+  "model": "XGBoost",
+  "accuracy": 0.9690821256038648,
+  "f1_score": 0.9475409836065574,
+  "precision": 0.932258064516129,
+  "recall": 0.9633333333333334,
+  "duration_seconds": 25.990905499988003,
+  "warnings": [],
+  "parameters": {
+    "n_estimators": 300,
+    "max_depth": 7,
+    "learning_rate": 0.025407408398692453,
+    "min_child_weight": 10,
+    "subsample": 0.7790105090610314,
+    "colsample_bytree": 0.8451235367845726,
+    "reg_lambda": 0.15455082385721058,
+    "reg_alpha": 0.6240835271723653,
+    "gamma": 2.4732215071102717
+  },
+  "test_minus_standard_cv": {
+    "accuracy": 0.004617411165437124,
+    "f1_score": 0.00844800905815457,
+    "precision": -0.0020472123944841325,
+    "recall": 0.019166666666666776
+  }
+}

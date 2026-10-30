@@ -1,0 +1,87 @@
+{
+  "versions": {
+    "python": "3.14.4",
+    "optuna": "4.9.0",
+    "scikit-learn": "1.9.0",
+    "xgboost": "3.4.1",
+    "pandas": "3.0.5",
+    "numpy": "2.5.2",
+    "threadpoolctl": "3.6.0",
+    "matplotlib": "3.11.1"
+  },
+  "models": [
+    {
+      "model": "Neural Network",
+      "accuracy": 0.9874396135265701,
+      "f1_score": 0.978441127694859,
+      "precision": 0.9735973597359736,
+      "recall": 0.9833333333333333,
+      "duration_seconds": 67.67968989998917,
+      "warnings": [],
+      "parameters": {
+        "hidden_layer_sizes": [
+          50
+        ],
+        "activation": "tanh",
+        "alpha": 0.06424982155390438,
+        "learning_rate_init": 0.0004672941588975318,
+        "batch_size": "auto"
+      },
+      "test_minus_standard_cv": {
+        "accuracy": 0.0009764061943232649,
+        "f1_score": 0.0017218295620560209,
+        "precision": -0.0015934798509240622,
+        "recall": 0.0050000000000000044
+      }
+    },
+    {
+      "model": "Decision Tree",
+      "accuracy": 0.9072463768115943,
+      "f1_score": 0.8410596026490066,
+      "precision": 0.8355263157894737,
+      "recall": 0.8466666666666667,
+      "duration_seconds": 1.797603600018192,
+      "warnings": [],
+      "parameters": {
+        "criterion": "gini",
+        "max_depth": null,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1,
+        "max_features": null,
+        "ccp_alpha": 0.0
+      },
+      "test_minus_standard_cv": {
+        "accuracy": -0.0008987142865486408,
+        "f1_score": 0.000885924301114227,
+        "precision": -0.012481037909575887,
+        "recall": 0.014166666666666772
+      }
+    },
+    {
+      "model": "XGBoost",
+      "accuracy": 0.9690821256038648,
+      "f1_score": 0.9475409836065574,
+      "precision": 0.932258064516129,
+      "recall": 0.9633333333333334,
+      "duration_seconds": 25.990905499988003,
+      "warnings": [],
+      "parameters": {
+        "n_estimators": 300,
+        "max_depth": 7,
+        "learning_rate": 0.025407408398692453,
+        "min_child_weight": 10,
+        "subsample": 0.7790105090610314,
+        "colsample_bytree": 0.8451235367845726,
+        "reg_lambda": 0.15455082385721058,
+        "reg_alpha": 0.6240835271723653,
+        "gamma": 2.4732215071102717
+      },
+      "test_minus_standard_cv": {
+        "accuracy": 0.004617411165437124,
+        "f1_score": 0.00844800905815457,
+        "precision": -0.0020472123944841325,
+        "recall": 0.019166666666666776
+      }
+    }
+  ]
+}

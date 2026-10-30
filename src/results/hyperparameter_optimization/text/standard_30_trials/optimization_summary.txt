@@ -1,0 +1,109 @@
+{
+  "complete": true,
+  "protocol": "standard_30_trials",
+  "studies": 3,
+  "trials": 60,
+  "cv_fits": 300,
+  "outer_refits": 0,
+  "elapsed_seconds": 4977.8934916,
+  "versions": {
+    "python": "3.14.4",
+    "optuna": "4.9.0",
+    "scikit-learn": "1.9.0",
+    "xgboost": "3.4.1",
+    "pandas": "3.0.5",
+    "numpy": "2.5.2",
+    "threadpoolctl": "3.6.0",
+    "matplotlib": "3.11.1"
+  },
+  "models": {
+    "Neural Network": {
+      "standard_selected_cv": {
+        "accuracy": {
+          "mean": 0.9864632073322468,
+          "std": 0.0032432760269568636
+        },
+        "f1_score": {
+          "mean": 0.976719298132803,
+          "std": 0.005513869027331098
+        },
+        "precision": {
+          "mean": 0.9751908395868977,
+          "std": 0.010550115548051386
+        },
+        "recall": {
+          "mean": 0.9783333333333333,
+          "std": 0.00684653196881459
+        }
+      },
+      "standard_parameters": {
+        "hidden_layer_sizes": [
+          50
+        ],
+        "activation": "tanh",
+        "alpha": 0.06424982155390438,
+        "learning_rate_init": 0.0004672941588975318,
+        "batch_size": "auto"
+      }
+    },
+    "Decision Tree": {
+      "standard_selected_cv": {
+        "accuracy": {
+          "mean": 0.9081450910981429,
+          "std": 0.005558943947822264
+        },
+        "f1_score": {
+          "mean": 0.8401736783478924,
+          "std": 0.010206926838434074
+        },
+        "precision": {
+          "mean": 0.8480073536990496,
+          "std": 0.007353668733905745
+        },
+        "recall": {
+          "mean": 0.8324999999999999,
+          "std": 0.012977009585331194
+        }
+      },
+      "standard_parameters": {
+        "criterion": "gini",
+        "max_depth": null,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1,
+        "max_features": null,
+        "ccp_alpha": 0.0
+      }
+    },
+    "XGBoost": {
+      "standard_selected_cv": {
+        "accuracy": {
+          "mean": 0.9644647144384276,
+          "std": 0.005975120485012375
+        },
+        "f1_score": {
+          "mean": 0.9390929745484028,
+          "std": 0.010131244787689108
+        },
+        "precision": {
+          "mean": 0.9343052769106132,
+          "std": 0.016522213456981606
+        },
+        "recall": {
+          "mean": 0.9441666666666666,
+          "std": 0.014613064930625143
+        }
+      },
+      "standard_parameters": {
+        "n_estimators": 300,
+        "max_depth": 7,
+        "learning_rate": 0.025407408398692453,
+        "min_child_weight": 10,
+        "subsample": 0.7790105090610314,
+        "colsample_bytree": 0.8451235367845726,
+        "reg_lambda": 0.15455082385721058,
+        "reg_alpha": 0.6240835271723653,
+        "gamma": 2.4732215071102717
+      }
+    }
+  }
+}
