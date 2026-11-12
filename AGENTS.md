@@ -171,7 +171,7 @@ status above distinguishes completed preparation from running and pending work.
 - Fix all random seeds where the estimator or search method supports them.
 - All candidate models must be evaluated using identical splits.
 
-### 3. Prevent data leakage during hyperparameter optimization (implemented)
+### 3. Prevent data leakage during hyperparameter optimization (completed)
 
 - Put TF-IDF and the estimator in the same scikit-learn `Pipeline` used by the
   search procedure.
@@ -183,7 +183,7 @@ status above distinguishes completed preparation from running and pending work.
 - Apply learned transformations to validation/test data only with `transform`.
 - Never optimize hyperparameters or decision thresholds against `X_test`/`y_test`.
 
-### 4. Optimize each selected algorithm
+### 4. Optimize each selected algorithm (completed)
 
 - Define a justified hyperparameter search space for each of the selected models.
 - Use an automated search such as `GridSearchCV`, `RandomizedSearchCV`, Optuna, or
@@ -201,7 +201,7 @@ status above distinguishes completed preparation from running and pending work.
 - Do not silently change the primary metric or tune a classification threshold
   without documenting and justifying that methodological decision.
 
-### 5. Compare optimized models on the held-out test set
+### 5. Compare optimized models on the held-out test set (completed)
 
 - After every search is finalized, refit each selected pipeline on all of
   `X_train`/`y_train` using its best hyperparameters.

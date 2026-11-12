@@ -1,0 +1,26 @@
+{
+  "Neural Network": {
+    "tn": 727,
+    "fp": 8,
+    "fn": 5,
+    "tp": 295,
+    "roc_auc": 0.9984807256235828,
+    "average_precision": 0.9962524549050806
+  },
+  "Decision Tree": {
+    "tn": 685,
+    "fp": 50,
+    "fn": 46,
+    "tp": 254,
+    "roc_auc": 0.8893197278911565,
+    "average_precision": 0.7518567251461988
+  },
+  "XGBoost": {
+    "tn": 714,
+    "fp": 21,
+    "fn": 11,
+    "tp": 289,
+    "roc_auc": 0.9954195011337867,
+    "average_precision": 0.9879599508847549
+  }
+}
