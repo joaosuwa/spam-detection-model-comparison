@@ -1,0 +1,104 @@
+{
+  "trial": 10,
+  "evaluation": "held_out_test",
+  "selected_cv": {
+    "accuracy": {
+      "mean": 0.9644647144384276,
+      "std": 0.005975120485012375
+    },
+    "f1_score": {
+      "mean": 0.9390929745484028,
+      "std": 0.010131244787689108
+    },
+    "precision": {
+      "mean": 0.9343052769106132,
+      "std": 0.016522213456981606
+    },
+    "recall": {
+      "mean": 0.9441666666666666,
+      "std": 0.014613064930625143
+    }
+  },
+  "model": "XGBoost",
+  "model_parameters": {
+    "n_estimators": 300,
+    "max_depth": 7,
+    "learning_rate": 0.025407408398692453,
+    "min_child_weight": 10,
+    "subsample": 0.7790105090610314,
+    "colsample_bytree": 0.8451235367845726,
+    "reg_lambda": 0.15455082385721058,
+    "reg_alpha": 0.6240835271723653,
+    "gamma": 2.4732215071102717
+  },
+  "effective_parameters": {
+    "tfidf": {
+      "norm": "l2",
+      "smooth_idf": true,
+      "sublinear_tf": true,
+      "use_idf": true
+    },
+    "model": {
+      "objective": "binary:logistic",
+      "base_score": null,
+      "booster": null,
+      "callbacks": null,
+      "colsample_bylevel": null,
+      "colsample_bynode": null,
+      "colsample_bytree": 0.8451235367845726,
+      "device": null,
+      "early_stopping_rounds": null,
+      "enable_categorical": true,
+      "eval_metric": null,
+      "feature_types": null,
+      "feature_weights": null,
+      "gamma": 2.4732215071102717,
+      "grow_policy": null,
+      "importance_type": null,
+      "interaction_constraints": null,
+      "learning_rate": 0.025407408398692453,
+      "max_bin": null,
+      "max_cat_threshold": null,
+      "max_cat_to_onehot": null,
+      "max_delta_step": null,
+      "max_depth": 7,
+      "max_leaves": null,
+      "min_child_weight": 10,
+      "missing": "nan",
+      "monotone_constraints": null,
+      "multi_strategy": null,
+      "n_estimators": 300,
+      "n_jobs": 1,
+      "num_parallel_tree": null,
+      "random_state": 42,
+      "reg_alpha": 0.6240835271723653,
+      "reg_lambda": 0.15455082385721058,
+      "sampling_method": null,
+      "scale_pos_weight": null,
+      "subsample": 0.7790105090610314,
+      "tree_method": "hist",
+      "validate_parameters": null,
+      "verbosity": null
+    }
+  },
+  "artifact": "C:\\Users\\Usuario\\Desktop\\Work\\Faculdade\\Codigos\\AprendizadoMaquina\\spam-detection-model-comparison\\src\\results\\hyperparameter_optimization\\runs\\standard_20_trials_08542f399edf426395d330ec55b2e74a\\finalists\\xgboost\\model.joblib",
+  "versions": {
+    "python": "3.14.4",
+    "optuna": "4.9.0",
+    "scikit-learn": "1.9.0",
+    "xgboost": "3.4.1",
+    "pandas": "3.0.5",
+    "numpy": "2.5.2",
+    "threadpoolctl": "3.6.0",
+    "matplotlib": "3.11.1",
+    "joblib": "1.5.3"
+  },
+  "training_seconds": 20.913948499999606,
+  "prediction_seconds": 0.11501620000126422,
+  "accuracy": 0.9690821256038648,
+  "f1_score": 0.9475409836065574,
+  "precision": 0.932258064516129,
+  "recall": 0.9633333333333334,
+  "status": "complete",
+  "warnings": []
+}

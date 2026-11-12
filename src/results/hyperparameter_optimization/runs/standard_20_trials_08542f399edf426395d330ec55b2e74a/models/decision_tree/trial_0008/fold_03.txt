@@ -1,0 +1,57 @@
+{
+  "trial": 8,
+  "fold": 3,
+  "evaluation": "cross_validation",
+  "model": "Decision Tree",
+  "model_parameters": {
+    "criterion": "entropy",
+    "max_depth": 5,
+    "min_samples_split": 2,
+    "min_samples_leaf": 3,
+    "max_features": "sqrt",
+    "ccp_alpha": 0.010171413823294055
+  },
+  "effective_parameters": {
+    "tfidf": {
+      "norm": "l2",
+      "smooth_idf": true,
+      "sublinear_tf": true,
+      "use_idf": true
+    },
+    "model": {
+      "ccp_alpha": 0.010171413823294055,
+      "class_weight": null,
+      "criterion": "entropy",
+      "max_depth": 5,
+      "max_features": "sqrt",
+      "max_leaf_nodes": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 3,
+      "min_samples_split": 2,
+      "min_weight_fraction_leaf": 0.0,
+      "monotonic_cst": null,
+      "random_state": 42,
+      "splitter": "best"
+    }
+  },
+  "artifact": "c:\\Users\\Usuario\\Desktop\\Work\\Faculdade\\Codigos\\AprendizadoMaquina\\spam-detection-model-comparison\\src\\results\\hyperparameter_optimization\\runs\\standard_20_trials_08542f399edf426395d330ec55b2e74a\\models\\decision_tree\\trial_0008\\fold_03.joblib",
+  "versions": {
+    "python": "3.14.4",
+    "optuna": "4.9.0",
+    "scikit-learn": "1.9.0",
+    "xgboost": "3.4.1",
+    "pandas": "3.0.5",
+    "numpy": "2.5.2",
+    "threadpoolctl": "3.6.0",
+    "matplotlib": "3.11.1",
+    "joblib": "1.5.3"
+  },
+  "training_seconds": 0.42730739999933576,
+  "prediction_seconds": 0.08245549999992363,
+  "accuracy": 0.781136638452237,
+  "f1_score": 0.49299719887955185,
+  "precision": 0.7521367521367521,
+  "recall": 0.36666666666666664,
+  "status": "complete",
+  "warnings": []
+}

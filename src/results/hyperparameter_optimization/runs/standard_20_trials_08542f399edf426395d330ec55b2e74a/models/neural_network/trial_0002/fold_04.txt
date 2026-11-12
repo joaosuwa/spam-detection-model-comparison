@@ -1,0 +1,70 @@
+{
+  "trial": 2,
+  "fold": 4,
+  "evaluation": "cross_validation",
+  "model": "Neural Network",
+  "model_parameters": {
+    "hidden_layer_sizes": [
+      50
+    ],
+    "activation": "tanh",
+    "alpha": 0.00014445251022763054,
+    "learning_rate_init": 0.0003823475224675188,
+    "batch_size": "auto"
+  },
+  "effective_parameters": {
+    "tfidf": {
+      "norm": "l2",
+      "smooth_idf": true,
+      "sublinear_tf": true,
+      "use_idf": true
+    },
+    "model": {
+      "activation": "tanh",
+      "alpha": 0.00014445251022763054,
+      "batch_size": "auto",
+      "beta_1": 0.9,
+      "beta_2": 0.999,
+      "early_stopping": false,
+      "epsilon": 1e-08,
+      "hidden_layer_sizes": [
+        50
+      ],
+      "learning_rate": "constant",
+      "learning_rate_init": 0.0003823475224675188,
+      "max_fun": 15000,
+      "max_iter": 500,
+      "momentum": 0.9,
+      "n_iter_no_change": 10,
+      "nesterovs_momentum": true,
+      "power_t": 0.5,
+      "random_state": 42,
+      "shuffle": true,
+      "solver": "adam",
+      "tol": 0.0001,
+      "validation_fraction": 0.1,
+      "verbose": false,
+      "warm_start": false
+    }
+  },
+  "artifact": "c:\\Users\\Usuario\\Desktop\\Work\\Faculdade\\Codigos\\AprendizadoMaquina\\spam-detection-model-comparison\\src\\results\\hyperparameter_optimization\\runs\\standard_20_trials_08542f399edf426395d330ec55b2e74a\\models\\neural_network\\trial_0002\\fold_04.joblib",
+  "versions": {
+    "python": "3.14.4",
+    "optuna": "4.9.0",
+    "scikit-learn": "1.9.0",
+    "xgboost": "3.4.1",
+    "pandas": "3.0.5",
+    "numpy": "2.5.2",
+    "threadpoolctl": "3.6.0",
+    "matplotlib": "3.11.1",
+    "joblib": "1.5.3"
+  },
+  "training_seconds": 16.903281900000366,
+  "prediction_seconds": 0.08858879999934288,
+  "accuracy": 0.9854897218863361,
+  "f1_score": 0.975,
+  "precision": 0.975,
+  "recall": 0.975,
+  "status": "complete",
+  "warnings": []
+}

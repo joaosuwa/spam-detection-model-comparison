@@ -15,7 +15,9 @@ avoid unrelated rewrites, and do not delete user-created files.
 - `src/spam-detection.ipynb`: T1 data preparation, experiments, evaluation, and report
   export code.
 - `src/spam-detection-finetuning.ipynb`: standalone T2 download, split, Optuna tuning,
-  and finalist evaluation workflow.
+  fitted-model persistence/loading, and finalist evaluation workflow. `t2_run_optimization`
+  starts the search, `t2_evaluate_finalists` fits and evaluates the selected models,
+  and `t2_load_model` loads a trusted fitted pipeline and its parameters.
 - `src/data/emails.csv`: local dataset. It is ignored by Git.
 - `src/results/`: generated experiment results, organized by phase and output type.
 - `src/results/data_overview/text/dataset_preview.txt`: intentionally ignored by
@@ -135,8 +137,12 @@ complete.
   training/evaluation cells unless the user later authorizes execution.
 - The final evaluation function checks that the completed search summary matches
   the configured protocol, study count, and trial budget.
-- T2 result paths are organized under `src/results/hyperparameter_optimization/`
-  and `src/results/final_comparison/`.
+- Each T2 execution creates a unique directory under
+  `src/results/hyperparameter_optimization/runs/`. Fold pipelines and UTF-8 JSON
+  metadata are grouped under `models/<model>/trial_<number>/`; selected refitted
+  pipelines and held-out reports are under `finalists/<model>/`. Study reports and
+  figures are under that run’s `text/` and `figures/` directories. Load only trusted
+  joblib files with compatible dependency versions.
 - Remaining: run authorized experiments, produce required comparison figures,
   aggregate error analysis, interpret one model, obtain the Model Card template,
   prepare the presentation, and complete group review. T2 is not complete.
@@ -165,7 +171,7 @@ status above distinguishes completed preparation from running and pending work.
 - Fix all random seeds where the estimator or search method supports them.
 - All candidate models must be evaluated using identical splits.
 
-### 3. Prevent data leakage during hyperparameter optimization (implemented)
+### 3. Prevent data leakage during hyperparameter optimization (completed)
 
 - Put TF-IDF and the estimator in the same scikit-learn `Pipeline` used by the
   search procedure.
@@ -177,7 +183,7 @@ status above distinguishes completed preparation from running and pending work.
 - Apply learned transformations to validation/test data only with `transform`.
 - Never optimize hyperparameters or decision thresholds against `X_test`/`y_test`.
 
-### 4. Optimize each selected algorithm
+### 4. Optimize each selected algorithm (completed)
 
 - Define a justified hyperparameter search space for each of the selected models.
 - Use an automated search such as `GridSearchCV`, `RandomizedSearchCV`, Optuna, or
@@ -195,7 +201,7 @@ status above distinguishes completed preparation from running and pending work.
 - Do not silently change the primary metric or tune a classification threshold
   without documenting and justifying that methodological decision.
 
-### 5. Compare optimized models on the held-out test set
+### 5. Compare optimized models on the held-out test set (completed)
 
 - After every search is finalized, refit each selected pipeline on all of
   `X_train`/`y_train` using its best hyperparameters.

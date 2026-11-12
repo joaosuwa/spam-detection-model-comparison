@@ -1,0 +1,80 @@
+{
+  "trial": 0,
+  "evaluation": "held_out_test",
+  "selected_cv": {
+    "accuracy": {
+      "mean": 0.9081450910981429,
+      "std": 0.005558943947822264
+    },
+    "f1_score": {
+      "mean": 0.8401736783478924,
+      "std": 0.010206926838434074
+    },
+    "precision": {
+      "mean": 0.8480073536990496,
+      "std": 0.007353668733905745
+    },
+    "recall": {
+      "mean": 0.8324999999999999,
+      "std": 0.012977009585331194
+    }
+  },
+  "model": "Decision Tree",
+  "model_parameters": {
+    "criterion": "gini",
+    "max_depth": null,
+    "min_samples_split": 2,
+    "min_samples_leaf": 1,
+    "max_features": null,
+    "ccp_alpha": 0.0
+  },
+  "effective_parameters": {
+    "tfidf": {
+      "norm": "l2",
+      "smooth_idf": true,
+      "sublinear_tf": true,
+      "use_idf": true
+    },
+    "model": {
+      "ccp_alpha": 0.0,
+      "class_weight": null,
+      "criterion": "gini",
+      "max_depth": null,
+      "max_features": null,
+      "max_leaf_nodes": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 1,
+      "min_samples_split": 2,
+      "min_weight_fraction_leaf": 0.0,
+      "monotonic_cst": null,
+      "random_state": 42,
+      "splitter": "best"
+    }
+  },
+  "artifact": "C:\\Users\\Usuario\\Desktop\\Work\\Faculdade\\Codigos\\AprendizadoMaquina\\spam-detection-model-comparison\\src\\results\\hyperparameter_optimization\\runs\\standard_20_trials_08542f399edf426395d330ec55b2e74a\\finalists\\decision_tree\\model.joblib",
+  "versions": {
+    "python": "3.14.4",
+    "optuna": "4.9.0",
+    "scikit-learn": "1.9.0",
+    "xgboost": "3.4.1",
+    "pandas": "3.0.5",
+    "numpy": "2.5.2",
+    "threadpoolctl": "3.6.0",
+    "matplotlib": "3.11.1",
+    "joblib": "1.5.3"
+  },
+  "training_seconds": 1.252063799998723,
+  "prediction_seconds": 0.09707350000098813,
+  "accuracy": 0.9072463768115943,
+  "f1_score": 0.8410596026490066,
+  "precision": 0.8355263157894737,
+  "recall": 0.8466666666666667,
+  "status": "complete",
+  "warnings": [],
+  "test_minus_standard_cv": {
+    "accuracy": -0.0008987142865486408,
+    "f1_score": 0.000885924301114227,
+    "precision": -0.012481037909575887,
+    "recall": 0.014166666666666772
+  }
+}
