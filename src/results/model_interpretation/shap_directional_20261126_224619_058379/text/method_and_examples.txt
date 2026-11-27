@@ -1,0 +1,77 @@
+{
+  "run": "standard_20_trials_08542f399edf426395d330ec55b2e74a",
+  "seed": 42,
+  "rows_per_true_class": 5,
+  "training_row_indices_zero_based": [
+    4233,
+    3319,
+    3757,
+    3132,
+    2459,
+    3821,
+    1714,
+    1995,
+    2667,
+    3301
+  ],
+  "nsamples": 128,
+  "reference": "all-zero TF-IDF vector",
+  "output": "spam probability",
+  "l1_reg": "num_features(100)",
+  "models": {
+    "Neural Network": {
+      "baseline_probability": 0.0013195092992760314,
+      "max_additivity_error": 1.887379141862766e-15,
+      "examples": [
+        {
+          "row_index": 4233,
+          "true_class": 0,
+          "predicted_class": 0,
+          "spam_probability": 0.0015463296161923503
+        },
+        {
+          "row_index": 3821,
+          "true_class": 1,
+          "predicted_class": 1,
+          "spam_probability": 0.9955172829513266
+        }
+      ]
+    },
+    "Decision Tree": {
+      "baseline_probability": 0.0,
+      "max_additivity_error": 1.616484723854228e-13,
+      "examples": [
+        {
+          "row_index": 4233,
+          "true_class": 0,
+          "predicted_class": 0,
+          "spam_probability": 0.0
+        },
+        {
+          "row_index": 3821,
+          "true_class": 1,
+          "predicted_class": 1,
+          "spam_probability": 1.0
+        }
+      ]
+    },
+    "XGBoost": {
+      "baseline_probability": 0.9010970592498779,
+      "max_additivity_error": 7.66053886991358e-14,
+      "examples": [
+        {
+          "row_index": 4233,
+          "true_class": 0,
+          "predicted_class": 0,
+          "spam_probability": 0.03990919515490532
+        },
+        {
+          "row_index": 3821,
+          "true_class": 1,
+          "predicted_class": 1,
+          "spam_probability": 0.9191698431968689
+        }
+      ]
+    }
+  }
+}
