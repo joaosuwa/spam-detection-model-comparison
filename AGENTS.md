@@ -137,11 +137,12 @@ complete.
   training/evaluation cells unless the user later authorizes execution.
 - The final evaluation function checks that the completed search summary matches
   the configured protocol, study count, and trial budget.
-- Each T2 execution creates a unique directory under
-  `src/results/hyperparameter_optimization/runs/`. Fold pipelines and UTF-8 JSON
-  metadata are grouped under `models/<model>/trial_<number>/`; selected refitted
-  pipelines and held-out reports are under `finalists/<model>/`. Study reports and
-  figures are under that run’s `text/` and `figures/` directories. Load only trusted
+- T2 artifacts are stored directly under `src/results/hyperparameter_optimization/`.
+  Fold pipelines and UTF-8 JSON metadata are grouped under
+  `models/<model>/trial_<number>/`; selected refitted pipelines and held-out reports
+  are under `finalists/<model>/`. Study reports and figures are in `text/` and
+  `figures/`; interpretations are in `model_interpretation/`. Existing experiment
+  artifacts must be preserved before starting another search. Load only trusted
   joblib files with compatible dependency versions.
 - Remaining: run authorized experiments, produce required comparison figures,
   aggregate error analysis, interpret one model, obtain the Model Card template,
