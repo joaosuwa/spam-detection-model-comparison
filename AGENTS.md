@@ -213,7 +213,7 @@ status above distinguishes completed preparation from running and pending work.
 - Identify the best overall model or clearly explain a practical tie and the
   conditions under which each winner is preferable.
 
-### 6. Add required comparison visualizations
+### 6. Add required comparison visualizations (completed)
 
 - Create visualizations that materially support the final comparison.
 - For this classification task, include at least:
@@ -226,7 +226,7 @@ status above distinguishes completed preparation from running and pending work.
   explicitly justify probability calibration if it is added.
 - Save every final plot as PDF in the appropriate T2 results subdirectory.
 
-### 7. Perform aggregated error analysis
+### 7. Perform aggregated error analysis (completed)
 
 - Analyze errors for the best model, or for all tied winners.
 - Do not write a sample-by-sample narrative. Aggregate findings instead.
@@ -238,7 +238,7 @@ status above distinguishes completed preparation from running and pending work.
 - Discuss the practical impact of false positives (normal email marked as spam)
   and false negatives (spam missed by the model).
 
-### 8. Interpret one final model
+### 8. Interpret one final model (completed)
 
 - Select one model based on the definitive test analysis.
 - Apply an appropriate interpretation method and identify the features that appear
@@ -251,7 +251,7 @@ status above distinguishes completed preparation from running and pending work.
 - Produce report-ready tables/plots and discuss both plausible and unexpected
   relationships. Do not present feature importance as proof of causality.
 
-### 9. Produce the mandatory T2 deliverables
+### 9. Produce the mandatory T2 deliverables (completed)
 
 - Create the final PDF using the Model Card structure supplied by the professor in
   Moodle. The format is mandatory. Obtain the template before authoring the final
